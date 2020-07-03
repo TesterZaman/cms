@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probelm Update</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootsrap-css.css">
+    <script src="JS/Clock.js" type="text/javascript"></script>
+    <script src="JS/BackButton.js">
+    </script>
+
+    <div class="header">
+        <div id="logo">
+            <h1><img src="css/picture/logo.png" alt="logo">
+                <a href="http://www.zztlbd.com/" style="text-decoration: none; color: black;">
+                    <b>Zara Zaman Technology Ltd.</b>
+                </a>
+            </h1>
+        </div>
+        <div id="com_name ">
+
+            <h2>Call Management System</h2>
+        </div>
+
+        <div class="clock "><span id='clock'></span>
+        </div>
+    </div>
+</head>
+
+<body class="body " onload=display_ct();>
+    <div class="form " id="submit">
+        <h2>Update the Probelm Details</h2><br>
+        <form name=" ProblemAdd " action="Problem_Add.html " onsubmit="return document.getElementById( 'submit').innerHTML='<h1>Problem Information is Successfully Updated.</h1> <h3>Thank You.</h3><br/>' " method="POST ">
+            <label for="ProblemName "><b>Problem Name</b></label><br>
+            <input type="text " placeholder="Enter Problem Name " name="ProblemName " value="Card Reader" required>
+            <br/><br>
+
+            <label for="ProblemDescription "><b>Problem Description</b></label><br>
+            <textarea id="textarea_problem" name="ProblemDescription " required>Every bank card or credit card has a dark stripe on the back. That line is a magnetic strip which contains specific details about the card and its owner. When the bank or credit card is swiped at an ATM, the reader verifies the information on the card before it authorizes the transaction. Over time, especially if the machine is highly used, ATM card readers can wear out. This means that the information on the back of the card cannot be read to verify the card user’s banking information. An ATM service repair professional can examine the reader to see if it needs to be cleaned, repaired, or fully replaced in order to work properly again.
+            </textarea>
+            <br/><br>
+
+            <label for="ProblemExpert "><b>Problem Expert Name</b></label><br>
+            <select name="ProblemExpert " id="ProblemExpert " required>
+                <option value="Not Selected ">Select</option>
+                <option value="Ab Khan ">AB khan</option>
+                <option value="Mahim ">Mahim</option>
+                <option value="Muaz ">Muaz</option>
+            </select>
+            <br/><br>
+
+            <button type="submit">Update</button>
+
+        </form>
+    </div>
+
+    <br>
+
+    <button type="button " class="button " onClick=" window.history.back(); ">Done</button> <br><br>
+
+</body>
+
+</html>

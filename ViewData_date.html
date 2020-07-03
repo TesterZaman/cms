@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Report By Datewise</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootsrap-css.css">
+    <script src="JS/Clock.js" type="text/javascript"></script>
+    <script src="JS/BackButton.js"></script>
+
+    <div class="header">
+        <div id="logo">
+            <h1><img src="css/picture/logo.png" alt="Logo">
+                <a href="http://www.zztlbd.com/" style="text-decoration: none; color: black;">
+                    <b>Zara Zaman Technology Ltd.</b>
+                </a>
+            </h1>
+
+        </div>
+        <div id="com_name ">
+
+            <h2>Call Management System</h2>
+        </div>
+
+        <div class="clock "><span id='clock'></span>
+        </div>
+
+    </div>
+</head>
+
+<body class="body " onload=display_ct();>
+
+    <div class="table">
+        <br>
+        <h3>View Report Datewise</h3><br>
+        <div style="color: aliceblue; ">
+            <input style="text-align: center;" type="text" name="viewbydate_start" value="20/06/2020" readonly> <b>To </b><input style="text-align: center;" type="text" name="viewbydate_end" value="23/06/2020" readonly>
+        </div>
+        <br>
+        <table border="3" style="width: 100%; margin-left:0px;">
+            <tr>
+                <th>Call Date</th>
+                <th>Call ID</th>
+                <th>Call Time</th>
+                <th>ATM ID</th>
+                <th>ATM Location</th>
+                <th>Probelm</th>
+                <th>Engineer Name</th>
+                <th>Call Status</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Remarks</th>
+                <th>Entry By</th>
+                <th>Assign By</th>
+                <th>Close By</th>
+            </tr>
+
+            <tr style="background-color: rgb(255, 112, 60); ">
+                <td>20/06/2020</td>
+                <td>00001</td>
+                <td>09:00 PM</td>
+                <td>DBBL-2932</td>
+                <td>Oxygen More,CTG FT-4 ATM,Shahjahan Squar, Chittagoang</td>
+                <td>Card Reader(IMCRW)</td>
+                <td>Sajib</td>
+                <td>Under Service</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: black; color: whitesmoke ">
+                <td>20/06/2020</td>
+                <td>00002</td>
+                <td>07:00 PM</td>
+                <td>DBBL-9191</td>
+                <td>Nayapara, Jamalpur</td>
+                <td>Dispencer Problem</td>
+                <td></td>
+                <td>Fake Call</td>
+                <td></td>
+                <td></td>
+                <td>Mistake</td>
+                <td>Mahim</td>
+                <td></td>
+                <td>Mahim</td>
+            </tr>
+
+            <tr style="background-color: red; color:white ">
+                <td>20/06/2020</td>
+                <td>00003</td>
+                <td>10:00 AM</td>
+                <td>DBBL-9001</td>
+                <td>Dattapara, Ashulia</td>
+                <td>Power Supply</td>
+                <td>Rajib</td>
+                <td>Pendding Call</td>
+                <td>10:30 PM</td>
+                <td></td>
+                <td>Ruunig</td>
+                <td>Muaz</td>
+                <td>Jisan</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>20/06/2020</td>
+                <td>00004</td>
+                <td>10:30 PM</td>
+                <td>Brac-5191</td>
+                <td>Gatepar,Jamalpur</td>
+                <td>Monitor </td>
+                <td>Rahul</td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: rgb(255, 112, 60); ">
+                <td>20/06/2020</td>
+                <td>00005</td>
+                <td>09:00 PM</td>
+                <td>DBBL-2932</td>
+                <td>Oxygen More,CTG FT-4 ATM,Shahjahan Squar, Chittagoang</td>
+                <td>Card Reader(IMCRW)</td>
+                <td>Sajib</td>
+                <td>Under Service</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: black; color: whitesmoke ">
+                <td>20/06/2020</td>
+                <td>00006</td>
+                <td>07:00 PM</td>
+                <td>DBBL-9191</td>
+                <td>Nayapara, Jamalpur</td>
+                <td>Dispencer Problem</td>
+                <td></td>
+                <td>Fake Call</td>
+                <td></td>
+                <td></td>
+                <td>Mistake</td>
+                <td>Mahim</td>
+                <td></td>
+                <td>Mahim</td>
+            </tr>
+
+            <tr style="background-color: red; color:white ">
+                <td>20/06/2020</td>
+                <td>00007</td>
+                <td>10:00 AM</td>
+                <td>DBBL-9001</td>
+                <td>Dattapara, Ashulia</td>
+                <td>Power Supply</td>
+                <td>Rajib</td>
+                <td>Pendding Call</td>
+                <td>10:30 PM</td>
+                <td></td>
+                <td>Ruunig</td>
+                <td>Muaz</td>
+                <td>Jisan</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>20/06/2020</td>
+                <td>00008</td>
+                <td>10:30 PM</td>
+                <td>Brac-5191</td>
+                <td>Gatepar,Jamalpur</td>
+                <td>Monitor </td>
+                <td>Rahul</td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: rgb(255, 112, 60); ">
+                <td>20/06/2020</td>
+                <td>00009</td>
+                <td>09:00 PM</td>
+                <td>DBBL-2932</td>
+                <td>Oxygen More,CTG FT-4 ATM,Shahjahan Squar, Chittagoang</td>
+                <td>Card Reader(IMCRW)</td>
+                <td>Sajib</td>
+                <td>Under Service</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: black; color: whitesmoke ">
+                <td>20/06/2020</td>
+                <td>00010</td>
+                <td>07:00 PM</td>
+                <td>DBBL-9191</td>
+                <td>Nayapara, Jamalpur</td>
+                <td>Dispencer Problem</td>
+                <td></td>
+                <td>Fake Call</td>
+                <td></td>
+                <td></td>
+                <td>Mistake</td>
+                <td>Mahim</td>
+                <td></td>
+                <td>Mahim</td>
+            </tr>
+
+            <tr style="background-color: red; color:white ">
+                <td>21/06/2020</td>
+                <td>00011</td>
+                <td>10:00 AM</td>
+                <td>DBBL-9001</td>
+                <td>Dattapara, Ashulia</td>
+                <td>Power Supply</td>
+                <td>Rajib</td>
+                <td>Pendding Call</td>
+                <td>10:30 PM</td>
+                <td></td>
+                <td>Ruunig</td>
+                <td>Muaz</td>
+                <td>Jisan</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>21/06/2020</td>
+                <td>00012</td>
+                <td>10:30 PM</td>
+                <td>Brac-5191</td>
+                <td>Gatepar,Jamalpur</td>
+                <td>Monitor </td>
+                <td>Rahul</td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: rgb(255, 112, 60); ">
+                <td>21/06/2020</td>
+                <td>00013</td>
+                <td>09:00 PM</td>
+                <td>DBBL-2932</td>
+                <td>Oxygen More,CTG FT-4 ATM,Shahjahan Squar, Chittagoang</td>
+                <td>Card Reader(IMCRW)</td>
+                <td>Sajib</td>
+                <td>Under Service</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: black; color: whitesmoke ">
+                <td>21/06/2020</td>
+                <td>00014</td>
+                <td>07:00 PM</td>
+                <td>DBBL-9191</td>
+                <td>Nayapara, Jamalpur</td>
+                <td>Dispencer Problem</td>
+                <td></td>
+                <td>Fake Call</td>
+                <td></td>
+                <td></td>
+                <td>Mistake</td>
+                <td>Mahim</td>
+                <td></td>
+                <td>Mahim</td>
+            </tr>
+
+            <tr style="background-color: red; color:white ">
+                <td>21/06/2020</td>
+                <td>00015</td>
+                <td>10:00 AM</td>
+                <td>DBBL-9001</td>
+                <td>Dattapara, Ashulia</td>
+                <td>Power Supply</td>
+                <td>Rajib</td>
+                <td>Pendding Call</td>
+                <td>10:30 PM</td>
+                <td></td>
+                <td>Ruunig</td>
+                <td>Muaz</td>
+                <td>Jisan</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>21/06/2020</td>
+                <td>00016</td>
+                <td>10:30 PM</td>
+                <td>Brac-5191</td>
+                <td>Gatepar,Jamalpur</td>
+                <td>Monitor </td>
+                <td>Rahul</td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: rgb(255, 112, 60); ">
+                <td>21/06/2020</td>
+                <td>00017</td>
+                <td>09:00 PM</td>
+                <td>DBBL-2932</td>
+                <td>Oxygen More,CTG FT-4 ATM,Shahjahan Squar, Chittagoang</td>
+                <td>Card Reader(IMCRW)</td>
+                <td>Sajib</td>
+                <td>Under Service</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: black; color: whitesmoke ">
+                <td>21/06/2020</td>
+                <td>00018</td>
+                <td>07:00 PM</td>
+                <td>DBBL-9191</td>
+                <td>Nayapara, Jamalpur</td>
+                <td>Dispencer Problem</td>
+                <td></td>
+                <td>Fake Call</td>
+                <td></td>
+                <td></td>
+                <td>Mistake</td>
+                <td>Mahim</td>
+                <td></td>
+                <td>Mahim</td>
+            </tr>
+
+            <tr style="background-color: red; color:white ">
+                <td>21/06/2020</td>
+                <td>00019</td>
+                <td>10:00 AM</td>
+                <td>DBBL-9001</td>
+                <td>Dattapara, Ashulia</td>
+                <td>Power Supply</td>
+                <td>Rajib</td>
+                <td>Pendding Call</td>
+                <td>10:30 PM</td>
+                <td></td>
+                <td>Ruunig</td>
+                <td>Muaz</td>
+                <td>Jisan</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>21/06/2020</td>
+                <td>00020</td>
+                <td>10:30 PM</td>
+                <td>Brac-5191</td>
+                <td>Gatepar,Jamalpur</td>
+                <td>Monitor </td>
+                <td>Rahul</td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: rgb(255, 112, 60); ">
+                <td>22/06/2020</td>
+                <td>00021</td>
+                <td>09:00 PM</td>
+                <td>DBBL-2932</td>
+                <td>Oxygen More,CTG FT-4 ATM,Shahjahan Squar, Chittagoang</td>
+                <td>Card Reader(IMCRW)</td>
+                <td>Sajib</td>
+                <td>Under Service</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: black; color: whitesmoke ">
+                <td>22/06/2020</td>
+                <td>00022</td>
+                <td>07:00 PM</td>
+                <td>DBBL-9191</td>
+                <td>Nayapara, Jamalpur</td>
+                <td>Dispencer Problem</td>
+                <td></td>
+                <td>Fake Call</td>
+                <td></td>
+                <td></td>
+                <td>Mistake</td>
+                <td>Mahim</td>
+                <td></td>
+                <td>Mahim</td>
+            </tr>
+
+            <tr style="background-color: red; color:white ">
+                <td>22/06/2020</td>
+                <td>00023</td>
+                <td>10:00 AM</td>
+                <td>DBBL-9001</td>
+                <td>Dattapara, Ashulia</td>
+                <td>Power Supply</td>
+                <td>Rajib</td>
+                <td>Pendding Call</td>
+                <td>10:30 PM</td>
+                <td></td>
+                <td>Ruunig</td>
+                <td>Muaz</td>
+                <td>Jisan</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>22/06/2020</td>
+                <td>00024</td>
+                <td>10:30 PM</td>
+                <td>Brac-5191</td>
+                <td>Gatepar,Jamalpur</td>
+                <td>Monitor </td>
+                <td>Rahul</td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: rgb(255, 112, 60); ">
+                <td>22/06/2020</td>
+                <td>00025</td>
+                <td>09:00 PM</td>
+                <td>DBBL-2932</td>
+                <td>Oxygen More,CTG FT-4 ATM,Shahjahan Squar, Chittagoang</td>
+                <td>Card Reader(IMCRW)</td>
+                <td>Sajib</td>
+                <td>Under Service</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: black; color: whitesmoke ">
+                <td>22/06/2020</td>
+                <td>00026</td>
+                <td>07:00 PM</td>
+                <td>DBBL-9191</td>
+                <td>Nayapara, Jamalpur</td>
+                <td>Dispencer Problem</td>
+                <td></td>
+                <td>Fake Call</td>
+                <td></td>
+                <td></td>
+                <td>Mistake</td>
+                <td>Mahim</td>
+                <td></td>
+                <td>Mahim</td>
+            </tr>
+
+            <tr style="background-color: red; color:white ">
+                <td>22/06/2020</td>
+                <td>00027</td>
+                <td>10:00 AM</td>
+                <td>DBBL-9001</td>
+                <td>Dattapara, Ashulia</td>
+                <td>Power Supply</td>
+                <td>Rajib</td>
+                <td>Pendding Call</td>
+                <td>10:30 PM</td>
+                <td></td>
+                <td>Ruunig</td>
+                <td>Muaz</td>
+                <td>Jisan</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>22/06/2020</td>
+                <td>00028</td>
+                <td>10:30 PM</td>
+                <td>Brac-5191</td>
+                <td>Gatepar,Jamalpur</td>
+                <td>Monitor </td>
+                <td>Rahul</td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: rgb(255, 112, 60); ">
+                <td>22/06/2020</td>
+                <td>00029</td>
+                <td>09:00 PM</td>
+                <td>DBBL-2932</td>
+                <td>Oxygen More,CTG FT-4 ATM,Shahjahan Squar, Chittagoang</td>
+                <td>Card Reader(IMCRW)</td>
+                <td>Sajib</td>
+                <td>Under Service</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: black; color: whitesmoke ">
+                <td>22/06/2020</td>
+                <td>00030</td>
+                <td>07:00 PM</td>
+                <td>DBBL-9191</td>
+                <td>Nayapara, Jamalpur</td>
+                <td>Dispencer Problem</td>
+                <td></td>
+                <td>Fake Call</td>
+                <td></td>
+                <td></td>
+                <td>Mistake</td>
+                <td>Mahim</td>
+                <td></td>
+                <td>Mahim</td>
+            </tr>
+
+            <tr style="background-color: red; color:white ">
+                <td>22/06/2020</td>
+                <td>00031</td>
+                <td>10:00 AM</td>
+                <td>DBBL-9001</td>
+                <td>Dattapara, Ashulia</td>
+                <td>Power Supply</td>
+                <td>Rajib</td>
+                <td>Pendding Call</td>
+                <td>10:30 PM</td>
+                <td></td>
+                <td>Ruunig</td>
+                <td>Muaz</td>
+                <td>Jisan</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>22/06/2020</td>
+                <td>00032</td>
+                <td>10:30 PM</td>
+                <td>Brac-5191</td>
+                <td>Gatepar,Jamalpur</td>
+                <td>Monitor </td>
+                <td>Rahul</td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: rgb(255, 112, 60); ">
+                <td>22/06/2020</td>
+                <td>00033</td>
+                <td>09:00 PM</td>
+                <td>DBBL-2932</td>
+                <td>Oxygen More,CTG FT-4 ATM,Shahjahan Squar, Chittagoang</td>
+                <td>Card Reader(IMCRW)</td>
+                <td>Sajib</td>
+                <td>Under Service</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: black; color: whitesmoke ">
+                <td>23/06/2020</td>
+                <td>00034</td>
+                <td>07:00 PM</td>
+                <td>DBBL-9191</td>
+                <td>Nayapara, Jamalpur</td>
+                <td>Dispencer Problem</td>
+                <td></td>
+                <td>Fake Call</td>
+                <td></td>
+                <td></td>
+                <td>Mistake</td>
+                <td>Mahim</td>
+                <td></td>
+                <td>Mahim</td>
+            </tr>
+
+            <tr style="background-color: red; color:white ">
+                <td>23/06/2020</td>
+                <td>00035</td>
+                <td>10:00 AM</td>
+                <td>DBBL-9001</td>
+                <td>Dattapara, Ashulia</td>
+                <td>Power Supply</td>
+                <td>Rajib</td>
+                <td>Pendding Call</td>
+                <td>10:30 PM</td>
+                <td></td>
+                <td>Ruunig</td>
+                <td>Muaz</td>
+                <td>Jisan</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>23/06/2020</td>
+                <td>00036</td>
+                <td>10:30 PM</td>
+                <td>Brac-5191</td>
+                <td>Gatepar,Jamalpur</td>
+                <td>Monitor </td>
+                <td>Rahul</td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: rgb(255, 112, 60); ">
+                <td>23/06/2020</td>
+                <td>00037</td>
+                <td>09:00 PM</td>
+                <td>DBBL-2932</td>
+                <td>Oxygen More,CTG FT-4 ATM,Shahjahan Squar, Chittagoang</td>
+                <td>Card Reader(IMCRW)</td>
+                <td>Sajib</td>
+                <td>Under Service</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: black; color: whitesmoke ">
+                <td>23/06/2020</td>
+                <td>00038</td>
+                <td>07:00 PM</td>
+                <td>DBBL-9191</td>
+                <td>Nayapara, Jamalpur</td>
+                <td>Dispencer Problem</td>
+                <td></td>
+                <td>Fake Call</td>
+                <td></td>
+                <td></td>
+                <td>Mistake</td>
+                <td>Mahim</td>
+                <td></td>
+                <td>Mahim</td>
+            </tr>
+
+            <tr style="background-color: red; color:white ">
+                <td>23/06/2020</td>
+                <td>00039</td>
+                <td>10:00 AM</td>
+                <td>DBBL-9001</td>
+                <td>Dattapara, Ashulia</td>
+                <td>Power Supply</td>
+                <td>Rajib</td>
+                <td>Pendding Call</td>
+                <td>10:30 PM</td>
+                <td></td>
+                <td>Ruunig</td>
+                <td>Muaz</td>
+                <td>Jisan</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>23/06/2020</td>
+                <td>00040</td>
+                <td>10:30 PM</td>
+                <td>Brac-5191</td>
+                <td>Gatepar,Jamalpur</td>
+                <td>Monitor </td>
+                <td>Rahul</td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: rgb(255, 112, 60); ">
+                <td>23/06/2020</td>
+                <td>00041</td>
+                <td>09:00 PM</td>
+                <td>DBBL-2932</td>
+                <td>Oxygen More,CTG FT-4 ATM,Shahjahan Squar, Chittagoang</td>
+                <td>Card Reader(IMCRW)</td>
+                <td>Sajib</td>
+                <td>Under Service</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: black; color: whitesmoke ">
+                <td>23/06/2020</td>
+                <td>00042</td>
+                <td>07:00 PM</td>
+                <td>DBBL-9191</td>
+                <td>Nayapara, Jamalpur</td>
+                <td>Dispencer Problem</td>
+                <td></td>
+                <td>Fake Call</td>
+                <td></td>
+                <td></td>
+                <td>Mistake</td>
+                <td>Mahim</td>
+                <td></td>
+                <td>Mahim</td>
+            </tr>
+
+            <tr style="background-color: red; color:white ">
+                <td>23/06/2020</td>
+                <td>00043</td>
+                <td>10:00 AM</td>
+                <td>DBBL-9001</td>
+                <td>Dattapara, Ashulia</td>
+                <td>Power Supply</td>
+                <td>Rajib</td>
+                <td>Pendding Call</td>
+                <td>10:30 PM</td>
+                <td></td>
+                <td>Ruunig</td>
+                <td>Muaz</td>
+                <td>Jisan</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>23/06/2020</td>
+                <td>00044</td>
+                <td>10:30 PM</td>
+                <td>Brac-5191</td>
+                <td>Gatepar,Jamalpur</td>
+                <td>Monitor </td>
+                <td>Rahul</td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: rgb(255, 112, 60); ">
+                <td>23/06/2020</td>
+                <td>00045</td>
+                <td>09:00 PM</td>
+                <td>DBBL-2932</td>
+                <td>Oxygen More,CTG FT-4 ATM,Shahjahan Squar, Chittagoang</td>
+                <td>Card Reader(IMCRW)</td>
+                <td>Sajib</td>
+                <td>Under Service</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: black; color: whitesmoke ">
+                <td>23/06/2020</td>
+                <td>00046</td>
+                <td>07:00 PM</td>
+                <td>DBBL-9191</td>
+                <td>Nayapara, Jamalpur</td>
+                <td>Dispencer Problem</td>
+                <td></td>
+                <td>Fake Call</td>
+                <td></td>
+                <td></td>
+                <td>Mistake</td>
+                <td>Mahim</td>
+                <td></td>
+                <td>Mahim</td>
+            </tr>
+
+            <tr style="background-color: red; color:white ">
+                <td>23/06/2020</td>
+                <td>00047</td>
+                <td>10:00 AM</td>
+                <td>DBBL-9001</td>
+                <td>Dattapara, Ashulia</td>
+                <td>Power Supply</td>
+                <td>Rajib</td>
+                <td>Pendding Call</td>
+                <td>10:30 PM</td>
+                <td></td>
+                <td>Ruunig</td>
+                <td>Muaz</td>
+                <td>Jisan</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>23/06/2020</td>
+                <td>00048</td>
+                <td>10:30 PM</td>
+                <td>Brac-5191</td>
+                <td>Gatepar,Jamalpur</td>
+                <td>Monitor </td>
+                <td>Rahul</td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: rgb(255, 112, 60); ">
+                <td>23/06/2020</td>
+                <td>00049</td>
+                <td>09:00 PM</td>
+                <td>DBBL-2932</td>
+                <td>Oxygen More,CTG FT-4 ATM,Shahjahan Squar, Chittagoang</td>
+                <td>Card Reader(IMCRW)</td>
+                <td>Sajib</td>
+                <td>Under Service</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: black; color: whitesmoke ">
+                <td>23/06/2020</td>
+                <td>00050</td>
+                <td>07:00 PM</td>
+                <td>DBBL-9191</td>
+                <td>Nayapara, Jamalpur</td>
+                <td>Dispencer Problem</td>
+                <td></td>
+                <td>Fake Call</td>
+                <td></td>
+                <td></td>
+                <td>Mistake</td>
+                <td>Mahim</td>
+                <td></td>
+                <td>Mahim</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="button " style="width: 100%; ">
+        <button type="button " onclick="window.history.back(); ">Back</button></a>
+    </div>
+
+</body>
+
+</html>

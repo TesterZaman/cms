@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Data</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootsrap-css.css">
+    <script src="JS/Clock.js" type="text/javascript"></script>
+    <script src="JS/BackButton.js">
+    </script>
+
+    <div class="header">
+        <div id="logo">
+            <h1><img src="css/picture/logo.png" alt="logo">
+                <a href="http://www.zztlbd.com/" style="text-decoration: none; color: black;">
+                    <b>Zara Zaman Technology Ltd.</b>
+                </a>
+            </h1>
+        </div>
+        <div id="com_name ">
+
+            <h2>Call Management System</h2>
+        </div>
+
+        <div class="clock "><span id='clock'></span>
+        </div>
+    </div>
+</head>
+
+<body class="body " onload=display_ct();>
+    <div class="form ">
+        <form name="delete_eng " action="Engineer_Delete.html " method="POST ">
+            <label for="engineerdelete ">Select <b>Engineer</b>  to Delete Data</label><br>
+            <select name="engineerdelete " id="engineerdelete ">
+                <option value="Not Selected ">Select</option>
+                <option value="Ab Khan ">Sajib</option>
+                <option value="Mahim ">Mahim</option>
+                <option value="Muaz ">Muaz</option>    
+            </select>
+            <button type="submit ">Delete</button>
+            <br><br>
+        </form>
+
+        <form name="delete_bank " action="Bank_Delete.html" method="POST ">
+            <label for="BankDelete ">Select <b>Bank</b>  to Delete Data</label><br>
+            <select name="BankDelete " id="BankDelete ">
+                <option value="Not Selected ">Select</option>
+                <option value="AB Bank ">AB Bank</option>
+                <option value="IBBL ">IBBL</option>
+                <option value="DBBL ">DBBL</option>
+                <option value="Al Arafah Islami Bank ">Al Arafah Islami Bank</option>
+                <option value="EXIM Bank ">EXIM Bank</option>
+            </select>
+            <button type="submit">Delete</button>
+            <br><br>
+        </form>
+
+        <form name="delete_ATM " action="ATM_Delete.html" method="POST ">
+            <label for="ATMDelete ">Select <b>ATM</b>  to Delete Data</label><br>
+            <select name="ATMDelete " id="ATMDelete ">
+                <option value="Not Selected ">Select</option>
+                <option value="Demo1 ">Demo1</option>
+                <option value="Demo2 ">Demo2</option>
+                <option value="Demo3 ">Demo3</option>
+                <option value="Demo4 ">Demo4</option>
+            </select>
+            <button type="submit ">Delete</button>
+            <br><br>
+        </form>
+
+        <form name="delete_problem " action="Problem_Delete.html" method="POST ">
+            <label for="ProblemDelete ">Select <b>Problem</b>  to Delete Data</label><br>
+            <select name="ProblemDelete " id="ProblemDelete ">
+                <option value="Not Selected ">Select</option>
+                <option value="Demo1 ">Demo1</option>
+                <option value="Demo2 ">Demo2</option>
+                <option value="Demo3 ">Demo3</option>
+                <option value="Demo4 ">Demo4</option>
+
+            </select>
+            <button type="submit ">Delete</button>
+            <br><br>
+        </form>
+
+        <button onclick="back()" type="button">Back to Homepage</button><br><br>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineer Delete</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootsrap-css.css">
+    <script src="JS/Clock.js" type="text/javascript"></script>
+    <script src="JS/BackButton.js">
+    </script>
+
+    <div class="header">
+        <div id="logo">
+            <h1><img src="css/picture/logo.png" alt="logo">
+                <a href="http://www.zztlbd.com/" style="text-decoration: none; color: black;">
+                    <b>Zara Zaman Technology Ltd.</b>
+                </a>
+            </h1>
+        </div>
+        <div id="com_name ">
+
+            <h2>Call Management System</h2>
+        </div>
+
+        <div class="clock "><span id='clock'></span>
+        </div>
+    </div>
+</head>
+
+<body class="body " onload=display_ct();>
+
+    <div class="form" id="submit">
+        <h2>Delete Engineer Details</h2><br>
+        <form name="engineer_delete " action="Engineer_Delete.html" onsubmit="return document.getElementById( 'submit').innerHTML='<h1>Engineer Information is Successfully Deleted.</h1> <h3>Thank You.</h3><br/>' " method="POST ">
+            <label for="engineerID "><b>Engineer ID</b></label><br>
+            <input type="text " placeholder="Enter Engineer ID " name="engID " value="ZZ-4747" required>
+            <br/><br>
+
+            <label for="engineerName "><b>Engineer Name</b></label><br>
+            <input type="text " placeholder="Enter Engineer Name " name="engName " value="Sajib" required>
+            <br/><br>
+
+            <label for="engineerPost " "><b>Engineer Post</b></label><br>
+                <select name="engPost " id="engPost " required>
+                <option value=" Not Selected ">Select</option>
+                <option value="Intern Engineer ">Intern Engineer</option>
+                <option value="Customer Engineer ">Customer Engineer</option>
+                <option value="Assistant Engineer ">Assistant Engineer</option>
+                <option value="Senior Engineer ">Senior Engineer</option>
+                <option value="Assistant Manager ">Assistant Manager</option>
+                <option value="Manager ">Manager</option>
+            </select>
+                <br /><br>
+
+                <label for="engineerEmail "><b>Engineer Email</b></label><br>
+                <input type="email " placeholder="Enter Engineer Email " name="engineerEmail " value="sajib@gmail.com " required>
+                <br/><br>
+
+                <label for="engineerPhone "><b>Engineer Contact Number</b></label><br>
+                <input type="number " placeholder="Enter Engineer Contact Number " name="engPhone " value="01763955886 " required>
+                <br /><br>
+
+                <label for="engineerAddress " "><b>Engineer Address</b></label><br>
+            <input type="textarea " placeholder="Enter Engineer Address " name="engAddress " value="Savar,Dhaka" required>
+            <br /><br>
+
+            <button type="submit" class="button ">Delete</button>
+
+        </form>
+    </div>
+    <br>
+    <button type="button " class="button " onClick=" window.history.back(); ">Done</button> <br><br>
+</body>
+
+</html>

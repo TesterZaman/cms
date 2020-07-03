@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Report</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootsrap-css.css">
+    <script src="JS/Clock.js" type="text/javascript"></script>
+    <script src="JS/BackButton.js">
+    </script>
+
+    <style>
+        .form input,
+        .form select {
+            width: 20%;
+        }
+    </style>
+
+    <div class="header">
+        <div id="logo">
+            <h1><img src="css/picture/logo.png" alt="logo">
+                <a href="http://www.zztlbd.com/" style="text-decoration: none; color: black;">
+                    <b>Zara Zaman Technology Ltd.</b>
+                </a>
+            </h1>
+
+        </div>
+        <div id="com_name ">
+
+            <h2>Call Management System</h2>
+        </div>
+
+        <div class="clock "><span id='clock'></span>
+        </div>
+    </div>
+</head>
+
+<body class="body " onload=display_ct();>
+    <div class="form" id="submit">
+        <form name="View_By_Date " action="ViewData_date.html" onsubmit="return document.getElementById( 'submit').innerHTML='
+    " method="POST ">
+            <label for="viewbydate ">Select <b>Date</b> to View Report</label><br>
+            <input type="date" name="viewbydate_start" required> <b>To</b> <input type="date" name="viewbydate_end" required><br>
+            <br> <button type="submit">View</button>
+            <br><br>
+        </form>
+
+        <form name="View_By_Eng" action="ViewData_eng.html" method="POST">
+            <label for="viewbyEngineer "> Select <b>Engineer Name & Date</b> to View Report</label><br>
+            <input type="date" name="viewbydate_start" required> <b>To</b> <input type="date" name="viewbydate_end" required><br>
+            <select name="viewbyEngineer " id="viewbyEngineer " required>
+                <option value="Not Selected ">Select</option>
+                <option value="Rahul ">Rahul</option>
+                <option value="Mahim ">Mahim</option>
+                <option value="Jisan ">Jisan</option>    
+                <option value="Muaz">Muaz</option>
+                <option value="Idban">Idban</option>
+            </select><br><br>
+            <button type="submit">View</button>
+            <br><br>
+        </form>
+
+        <form name="View_By_ATM" action="ViewData_ATM.html" method="POST">
+            <label for="viewbyATM "> Select <b>ATM ID & Date</b> to View Report</label><br>
+            <input type="date" name="viewbydate_start" required> <b>To</b> <input type="date" name="viewbydate_end" required><br>
+            <select name="viewbyATM " id="viewbyATM " required>
+                <option value="Not Selected ">Select</option>
+                 <option value="Demo1 ">Brac-5191</option>
+                 <option value="Demo2 ">IBBL-2828</option>
+                 <option value="Demo3 ">DBBL-2020</option>
+                 <option value="Demo4">AB-8383</option>
+            </select><br><br>
+            <button type="submit">View</button>
+            <br><br>
+        </form>
+
+        <form name="View_By_Bank" action="ViewData_bank.html" method="POST">
+            <label for="viewbyBank "> Select <b>Bank Name & Date</b> to View Data</label><br>
+            <input type="date" name="viewbydate_start" required> <b>To</b> <input type="date" name="viewbydate_end" required><br>
+            <select name="viewbyBank " id="viewbyBank " required>
+                <option value="Not Selected ">Select</option>
+                 <option value="IBBL ">IBBL</option>
+                 <option value="DBBL ">DBBL</option>
+                 <option value="AB ">AB</option>
+                 <option value="Brac">Brac</option>
+            </select><br><br>
+            <button type="submit">View</button>
+            <br><br>
+        </form>
+
+        <button type="button" onclick="back()">Back</button><br><br><br>
+
+    </div>
+</body>
+
+</html>

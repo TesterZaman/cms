@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootsrap-css.css">
+    <script src="JS/Clock.js" type="text/javascript"></script>
+    <div class="header">
+        <div id="logo">
+            <h1><img src="css/picture/logo.png" alt="logo">
+                <a href="http://www.zztlbd.com/" style="text-decoration: none; color: black;">
+                    <b>Zara Zaman Technology Ltd.</b>
+                </a>
+            </h1>
+        </div>
+        <div id="com_name ">
+
+            <h2>Call Management System</h2>
+        </div>
+
+        <div class="clock "><span id='clock'></span>
+        </div>
+    </div>
+</head>
+
+<body class="body " onload=display_ct();>
+    <div class="form ">
+        <h2>Please Login here to use this system</h2><br>
+
+        <form name="login " action="Homepage.html" method="POST ">
+            <label for="userID "><b>Enter User ID</b></label><br>
+            <input type="text " placeholder="Enter User ID " name="userID " required>
+            <br/><br>
+
+            <label for="Lpswd "><b>Password</b></label><br>
+            <input type="password " placeholder="Enter Your Password " name="passwd " required>
+            <br /><br>
+            <button type="submit ">Login</button>
+
+            <a href="user_login.html "><button type="button " >Cancel</button></a>
+        </form>
+
+    </div>
+</body>
+
+</html>

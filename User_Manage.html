@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manage</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootsrap-css.css">
+    <script src="JS/Clock.js" type="text/javascript"></script>
+    <div class="header">
+        <div id="logo">
+            <h1><img src="css/picture/logo.png" alt="logo">
+                <a href="http://www.zztlbd.com/" style="text-decoration: none; color: black;">
+                    <b>Zara Zaman Technology Ltd.</b>
+                </a>
+            </h1>
+        </div>
+        <div id="com_name ">
+
+            <h2>Call Management System</h2>
+        </div>
+
+        <div class="clock "><span id='clock'></span>
+        </div>
+    </div>
+</head>
+
+<body class="body " onload=display_ct();>
+    <div style="margin-top:20px; width: 100%;" class="form">
+
+        <h2>Select Which action is Needed</h2><br>
+
+        <a href="User_Add.html "><button style="font-size: x-large; padding: 13px;" >New User Add</button></a>
+        <br><br>
+
+        <form action="User_Update.html">
+            <label for="UserUpdate ">Select <b>User</b>  to Update Data</label><br>
+            <select name="UserUpdate " id="UserUpdate ">
+                <option value="Not Selected ">Select</option>
+                <option value="Demo1 ">Mahim</option>
+                <option value="Demo2 ">Muaz</option>
+                <option value="Demo3 ">Jisan</option>
+                <option value="Demo4 ">Idban</option>
+            </select>
+            <button type="button ">Update</button>
+        </form>
+
+        <form action="User_Delete.html">
+            <label for="UserDelete ">Select <b>User</b>  to Delete Data</label><br>
+            <select name="UserDelete " id="UserDelete ">
+                <option value="Not Selected ">Select</option>
+                <option value="Demo1 ">Mahim</option>
+                <option value="Demo2 ">Jisan</option>
+                <option value="Demo3 ">Muaz</option>
+                <option value="Demo4 ">Idban</option>
+            </select>
+            <button type="button ">Delete</button>
+        </form>
+        <br>
+
+        <a href="Admin_Home.html "><button type="button ">Back</button></a> <br>
+    </div>
+</body>
+
+</html>

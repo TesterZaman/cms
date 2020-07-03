@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Eng Assign</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootsrap-css.css">
+    <script src="JS/Clock.js" type="text/javascript"></script>
+
+    </script>
+
+    <div class="header">
+        <div id="logo">
+            <h1><img src="css/picture/logo.png" alt="logo">
+                <a href="http://www.zztlbd.com/" style="text-decoration: none; color: black;">
+                    <b>Zara Zaman Technology Ltd.</b> </h1>
+            </a>
+        </div>
+        <div id="com_name ">
+
+            <h2>Call Management System</h2>
+        </div>
+
+        <div class="clock "><span id='clock'></span>
+        </div>
+    </div>
+</head>
+
+<body class="body " onload=display_ct();>
+
+    <div class="form ">
+
+        <div id="submit">
+            <form name="eng_assign " action="Call_Eng_Ass.html " onsubmit="return document.getElementById( 'submit').innerHTML='<h1>Engineer is Successfully Assigned.</h1> <h3>Thank You.</h3><br/>' " method="POST ">
+                <label for="engAssID "><b>Engineer Assigned Call ID</b></label><br>
+                <input type="text " value="25060456 (Auto Generated Based On Tme) " name="engAssID " readonly>
+                <br /><br>
+
+                <label for="engineerName_select "><b>Engineer Name</b></label><br>
+                <select name="engineerName_select " required>
+                <option value="Not Selected ">Select</option>
+                <option value="Mahim ">Mahim</option>
+                <option value="Jisun ">Jisun</option>
+                <option value="Idban ">Idban</option>
+                <option value="Muaz ">Muaz</option>
+                <option value="Tasnim ">Tasnim</option>
+            </select>
+                <br /><br>
+
+                <label for="engineerID_select "><b>Engineer ID</b></label><br>
+                <select name="engineerID_select " required>
+                <option value="Not Selected ">Select</option>
+                <option value="Demo1 ">Demo1</option>
+                <option value="Demo2 ">Demo2</option>
+                <option value="Demo3 ">Demo3</option>
+                <option value="Demo4 ">Demo4</option>
+            </select>
+                <br /><br>
+
+                <label for="callType "><b>Call Status</b></label><br>
+                <select name="callType " required>
+                <option value="Not Selected ">Select</option>
+                <option value="Under Service ">Under Service</option>
+                <option value="Complete ">Complete</option>
+                <option value="Fake Call ">Fake Call</option>
+            </select>
+                <br /><br>
+
+                <label for="remark "><b>Remark</b></label><br>
+                <input type="text " placeholder="Remark " name="remark ">
+                <br /><br>
+
+                <label for="eng_issuedby "><b>Engineer Issued By</b></label><br>
+                <input type="text " value="Mahim(logged in user) " name="eng_issuedby " readonly>
+                <br /><br>
+
+                <button type="submit ">Assign</button>
+                <br><br>
+            </form>
+        </div>
+
+        <button type="button " class="button " onclick="location.reload(true); ">Re-Assign New Call</button> <br><br>
+        <button type="button " class="button " onClick=" window.history.back(); ">Done</button> <br><br>
+    </div>
+
+</body>
+
+</html>

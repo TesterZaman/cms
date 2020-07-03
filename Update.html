@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Data</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootsrap-css.css">
+    <script src="JS/Clock.js" type="text/javascript"></script>
+    <script src="JS/BackButton.js">
+    </script>
+
+    <div class="header">
+        <div id="logo">
+            <h1><img src="css/picture/logo.png" alt="logo">
+                <a href="http://www.zztlbd.com/" style="text-decoration: none; color: black;">
+                    <b>Zara Zaman Technology Ltd.</b>
+                </a>
+            </h1>
+        </div>
+        <div id="com_name ">
+
+            <h2>Call Management System</h2>
+        </div>
+
+        <div class="clock "><span id='clock'></span>
+        </div>
+    </div>
+</head>
+
+<body class="body " onload=display_ct();>
+    <div class="form ">
+        <form name="update_eng " action="Engineer_Update.html " method="POST ">
+            <label for="engineerupdate ">Select <b>Engineer</b>  to Update Data</label><br>
+            <select name="engineerupdate " id="engineerupdate ">
+                <option value="Not Selected ">Select</option>
+                <option value="Ab Khan ">Sajib</option>
+                <option value="Mahim ">Mahim</option>
+                <option value="Muaz ">Muaz</option>    
+            </select>
+            <button type="submit ">Update</button>
+            <br><br>
+        </form>
+
+        <form name="update_bank " action="Bank_Update.html" method="POST ">
+            <label for="BankUpdate ">Select <b>Bank</b>  to Update Data</label><br>
+            <select name="BankUpdate " id="BankUpdate ">
+                <option value="Not Selected ">Select</option>
+                <option value="AB Bank ">AB Bank</option>
+                <option value="IBBL ">IBBL</option>
+                <option value="DBBL ">DBBL</option>
+                <option value="Al Arafah Islami Bank ">Al Arafah Islami Bank</option>
+                <option value="EXIM Bank ">EXIM Bank</option>
+            </select>
+            <button type="submit">Update</button>
+            <br><br>
+        </form>
+
+        <form name="update_ATM " action="ATM_Update.html" method="POST ">
+            <label for="ATMUpdate ">Select <b>ATM</b>  to Update Data</label><br>
+            <select name="ATMUpdate " id="ATMUpdate ">
+                <option value="Not Selected ">Select</option>
+                <option value="Demo1 ">Demo1</option>
+                <option value="Demo2 ">Demo2</option>
+                <option value="Demo3 ">Demo3</option>
+                <option value="Demo4 ">Demo4</option>
+            </select>
+            <button type="submit ">Update</button>
+            <br><br>
+        </form>
+
+        <form name="update_problem " action="Problem_Update.html" method="POST ">
+            <label for="ProblemUpdate ">Select <b>Problem</b>  to Update Data</label><br>
+            <select name="ProblemUpdate " id="ProblemUpdate ">
+                <option value="Not Selected ">Select</option>
+                <option value="Demo1 ">Demo1</option>
+                <option value="Demo2 ">Demo2</option>
+                <option value="Demo3 ">Demo3</option>
+                <option value="Demo4 ">Demo4</option>
+
+            </select>
+            <button type="submit ">Update</button>
+            <br><br>
+        </form>
+
+        <button onclick="back()" type="button">Back to Homepage</button><br><br>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probelm Details</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootsrap-css.css">
+    <script src="JS/Clock.js" type="text/javascript"></script>
+    <script src="JS/BackButton.js">
+    </script>
+
+    <div class="header">
+        <div id="logo">
+            <h1><img src="css/picture/logo.png" alt="logo">
+                <a href="http://www.zztlbd.com/" style="text-decoration: none; color: black;">
+                    <b>Zara Zaman Technology Ltd.</b>
+                </a>
+            </h1>
+        </div>
+        <div id="com_name ">
+
+            <h2>Call Management System</h2>
+        </div>
+
+        <div class="clock "><span id='clock'></span>
+        </div>
+    </div>
+</head>
+
+<body class="body " onload=display_ct();>
+    <div class="form " id="submit">
+        <h2>Please fill up the Probelm Details</h2><br>
+        <form name=" ProblemAdd " action="Problem_Add.html " onsubmit="return document.getElementById( 'submit').innerHTML='<h1>New Problem Information is Successfully Added.</h1> <h3>Thank You.</h3><br/>' " method="POST ">
+            <label for="ProblemName "><b>Problem Name</b></label><br>
+            <input type="text " placeholder="Enter Problem Name " name="ProblemName " required>
+            <br/><br>
+
+            <label for="ProblemDescription "><b>Problem Description</b></label><br>
+            <input type="textarea " placeholder="Enter Problem Description " name="ProblemDescription " required>
+            <br/><br>
+
+            <label for="ProblemExpert "><b>Problem Expert Name</b></label><br>
+            <select name="ProblemExpert " id="ProblemExpert " required>
+                <option value="Not Selected ">Select</option>
+                <option value="Ab Khan ">AB khan</option>
+                <option value="Mahim ">Mahim</option>
+                <option value="Muaz ">Muaz</option>
+            </select>
+            <br/><br>
+
+            <button type="submit">ADD</button>
+
+        </form>
+    </div>
+
+    <br>
+    <button type="button " class="button " onclick="location.reload(true); ">Re-Add New Problem</button> <br><br>
+    <button type="button " class="button " onClick=" window.history.back(); ">Done</button> <br><br>
+
+</body>
+
+</html>

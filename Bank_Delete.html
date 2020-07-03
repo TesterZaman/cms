@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Delete</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootsrap-css.css">
+    <script src="JS/Clock.js" type="text/javascript"></script>
+    <script src="JS/BackButton.js">
+    </script>
+
+    <div class="header">
+        <div id="logo">
+            <h1><img src="css/picture/logo.png" alt="logo">
+                <a href="http://www.zztlbd.com/" style="text-decoration: none; color: black;">
+                    <b>Zara Zaman Technology Ltd.</b> </h1>
+            </a>
+        </div>
+        <div id="com_name ">
+
+            <h2>Call Management System</h2>
+        </div>
+
+        <div class="clock "><span id='clock'></span>
+        </div>
+    </div>
+</head>
+
+<body class="body " onload=display_ct();>
+
+    <div class="form" id="submit">
+        <h2>Delete Bank Details</h2><br>
+        <form name="bankAdd " action="Bank_Add.html " onsubmit="return document.getElementById( 'submit').innerHTML='<h1>Bank Information is Successfully Deleted.</h1> <h3>Thank You.</h3><br/>' " method="POST ">
+            <label for="bankName "><b>Bank Name</b></label><br>
+            <input type="text " placeholder="Enter Bank Name " name="bankName " value="IBBL" required>
+            <br/><br>
+
+            <label for="bankemail "><b>Bank Email Address</b></label><br>
+            <input type="email " placeholder="Enter Bank Email Address " name="bankemail " value="ibbl.info@gmail.com" required>
+            <br/><br>
+
+            <label for="bankphone "><b>Bank Contact Number</b></label><br>
+            <input type="text " placeholder="Enter Bank Contact Number " name="bankphone " value="01763955778" required>
+            <br/><br>
+
+            <label for="bankAddress "><b>Bank Address</b></label><br>
+            <input type="textarea " placeholder="Enter Bank Address " name="bankAddress " value="Dilkusha Comercial Area,Motijhil,Dhaka." required>
+            <br /><br>
+
+            <button type="submit">Delete</button>
+
+        </form>
+    </div>
+    <br>
+    <button type="button " class="button" onClick=" window.history.back();">Done</button> <br><br>
+
+
+</body>
+
+</html>

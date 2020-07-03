@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User Form</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootsrap-css.css">
+    <script src="JS/Clock.js" type="text/javascript"></script>
+    <script src="JS/confirmpass.js">
+    </script>
+
+    <div class="header">
+        <div id="logo">
+            <h1><img src="css/picture/logo.png" alt="logo">
+                <a href="http://www.zztlbd.com/" style="text-decoration: none; color: black;">
+                    <b>Zara Zaman Technology Ltd.</b>
+                </a>
+            </h1>
+        </div>
+        <div id="com_name ">
+
+            <h2>Call Management System</h2>
+        </div>
+
+        <div class="clock "><span id='clock'></span>
+        </div>
+    </div>
+
+</head>
+
+<body class="body " onload=display_ct();>
+
+    <div class="form">
+
+        <h2>Please fill up the form to Add New User</h2><br>
+
+        <form name="signup" action="User_data.html" onsubmit="return passcheck() " method="POST ">
+            <label for="employeeID"><b>Employee ID</b></label><br>
+            <input type="text" placeholder="Enter Employee ID " name="ID " required>
+            <br/><br>
+
+            <label for="EmpName"><b>Employee Name</b></label><br>
+            <input type="text" placeholder="Enter Employee Name" id="EmpName" name="EmpName" required>
+            <br/><br>
+
+            <label for="email"><b>Email Address</b></label><br>
+            <input type="email" placeholder="Enter Email Address " name="email " required>
+            <br/><br>
+
+            <label for="phone"><b>Phone Number</b></label><br>
+            <input type="text" placeholder="Enter Phone Number " name="phone " required>
+            <br/><br>
+
+            <label for="pswd "><b>Password</b></label><br>
+            <input type="password" placeholder="Choose Password " name="EmpPswd" required>
+            <br /><br>
+
+            <label for="cpswd "><b>Confirm Password</b></label><br>
+            <input type="password" placeholder="Confirm Password " name="EmpPswdCon" required>
+            <br /><br>
+
+            <button type="submit ">Add User</button>
+
+            <a href="User_Manage.html "><button type="button" >Cancel</button></a><br><br>
+        </form>
+    </div>
+</body>
+
+</html>

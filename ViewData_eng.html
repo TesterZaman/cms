@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Report By Engineer</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootsrap-css.css">
+    <script src="JS/Clock.js" type="text/javascript"></script>
+    <script src="JS/BackButton.js"></script>
+
+    <div class="header">
+        <div id="logo">
+            <h1><img src="css/picture/logo.png" alt="Logo">
+                <a href="http://www.zztlbd.com/" style="text-decoration: none; color: black;">
+                    <b>Zara Zaman Technology Ltd.</b>
+                </a>
+            </h1>
+
+        </div>
+        <div id="com_name ">
+
+            <h2>Call Management System</h2>
+        </div>
+
+        <div class="clock "><span id='clock'></span>
+        </div>
+
+    </div>
+</head>
+
+<body class="body " onload=display_ct();>
+
+    <div class="table">
+        <br>
+        <h3>View Report Engineer-wise</h3><br>
+
+        <div style="color: aliceblue; ">
+            <input style="text-align: center;" type="text" name="viewbydate_start" value="20/06/2020" readonly> <b>To </b><input style="text-align: center;" type="text" name="viewbydate_end" value="23/06/2020" readonly>
+            <br><br>
+            <input style="text-align: center;" type="text" name="viewdata_eng" value="Rahul" readonly>
+        </div>
+        <br>
+
+        <table border="3" style="width: 100%; margin-left:0px;">
+            <tr>
+                <th>Call Date</th>
+                <th>Engineer Name</th>
+                <th>Call ID</th>
+                <th>Call Time</th>
+                <th>ATM ID</th>
+                <th>ATM Location</th>
+                <th>Probelm</th>
+                <th>Call Status</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Remarks</th>
+                <th>Entry By</th>
+                <th>Assign By</th>
+                <th>Close By</th>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>20/06/2020</td>
+                <td>Rahul</td>
+                <td>00004</td>
+                <td>10:30 AM</td>
+                <td>DBBl-9191</td>
+                <td>Gulshan-2,Dhaka</td>
+                <td>Monitor </td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>20/06/2020</td>
+                <td>Rahul</td>
+                <td>00008</td>
+                <td>11:00 AM</td>
+                <td>IBBL-1991</td>
+                <td>Mirpur-11, Dhaka</td>
+                <td>Card Reader </td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: red; color: white ">
+                <td>21/06/2020</td>
+                <td>Rahul</td>
+                <td>00012</td>
+                <td>10:30 AM</td>
+                <td>Brac-1992</td>
+                <td>Tongi,Dhaka</td>
+                <td>Dispencer Problem </td>
+                <td>Pending Call</td>
+                <td>11:00 AM</td>
+                <td></td>
+                <td></td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>21/06/2020</td>
+                <td>Rahul</td>
+                <td>00016</td>
+                <td>05:00 PM</td>
+                <td>Brac-1992</td>
+                <td>Tongi,Dhaka</td>
+                <td>Recieprinter </td>
+                <td>Complete</td>
+                <td>07:00 PM</td>
+                <td>09:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>21/06/2020</td>
+                <td>Rahul</td>
+                <td>00020</td>
+                <td>08:00 PM</td>
+                <td>Brac-4647</td>
+                <td>Rampura,Dhakar</td>
+                <td>Link Problem </td>
+                <td>Complete</td>
+                <td>09:00 PM</td>
+                <td>10:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: rgb(255, 112, 60); color: black ">
+                <td>22/06/2020</td>
+                <td>Rahul</td>
+                <td>00024</td>
+                <td>10:30 AM</td>
+                <td>DBBL-2291</td>
+                <td>Zigatola,Dhanmodi,Dhaka</td>
+                <td>Power Problem </td>
+                <td>Under Service</td>
+                <td>11:00 AM</td>
+                <td></td>
+                <td></td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>22/06/2020</td>
+                <td>Rahul</td>
+                <td>00028</td>
+                <td>11:30 AM</td>
+                <td>Brac-1992</td>
+                <td>Tongi,Dhaka</td>
+                <td>Card Reader Problem </td>
+                <td>Complete</td>
+                <td>11:30 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>22/06/2020</td>
+                <td>Rahul</td>
+                <td>00032</td>
+                <td>10:30 AM</td>
+                <td>DBBL-2291</td>
+                <td>Zigatola,Dhanmodi,Dhaka</td>
+                <td>Monitor </td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>23/06/2020</td>
+                <td>Rahul</td>
+                <td>00036</td>
+                <td>10:30 AM</td>
+                <td>Brac-5191</td>
+                <td>Mirpur-10,Dhaka</td>
+                <td>Link problem </td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>23/06/2020</td>
+                <td>Rahul</td>
+                <td>00040</td>
+                <td>06:00 PM</td>
+                <td>DBBL-2291</td>
+                <td>Dhanmodi,Dhaka</td>
+                <td>Card Reader </td>
+                <td>Complete</td>
+                <td>07:00 PM</td>
+                <td>08:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: green; color: white ">
+                <td>23/06/2020</td>
+                <td>Rahul</td>
+                <td>00044</td>
+                <td>10:30 AM</td>
+                <td>IBBL-5191</td>
+                <td>Dhanmodi,Dhaka</td>
+                <td>Card Reader </td>
+                <td>Complete</td>
+                <td>11:00 AM</td>
+                <td>02:00 PM</td>
+                <td>All Okay</td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td>Muaz</td>
+            </tr>
+
+            <tr style="background-color: red; color: white ">
+                <td>23/06/2020</td>
+                <td>Rahul</td>
+                <td>00048</td>
+                <td>07:00 PM</td>
+                <td>Brac-5191</td>
+                <td>Mirpur-11</td>
+                <td>Monitor </td>
+                <td>Pending Call</td>
+                <td>07:30 PM</td>
+                <td></td>
+                <td></td>
+                <td>Idban</td>
+                <td>Mahim</td>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="button" style="width: 100%;">
+        <button type="button" onclick="window.history.back();">Back</button></a>
+    </div>
+
+</body>
+
+</html>

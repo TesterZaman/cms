@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Status Update</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootsrap-css.css">
+    <script src="JS/Clock.js" type="text/javascript"></script>
+    </script>
+
+    <div class="header">
+        <div id="logo">
+            <h1><img src="css/picture/logo.png" alt="logo">
+                <a href="http://www.zztlbd.com/" style="text-decoration: none; color: black;">
+                    <b>Zara Zaman Technology Ltd.</b>
+                </a>
+            </h1>
+
+
+        </div>
+        <div id="com_name ">
+
+            <h2>Call Management System</h2>
+        </div>
+
+        <div class="clock "><span id='clock'></span>
+        </div>
+    </div>
+</head>
+
+<body class="body " onload=display_ct();>
+    <div class="form">
+        <div id="submit">
+            <form name="call_stat_up " action="Call_Status_Up.html " onsubmit="return document.getElementById( 'submit').innerHTML='<h1>Call Status is Successfully Updated.</h1> <h3>Thank You.</h3><br/>' " method="POST ">
+                <label for="engAssID "><b>Engineer Assigned Call ID</b></label><br>
+                <input type="text " value="25060456 (Previous assigned ID) " name="engAssID " readonly>
+                <br /><br>
+
+                <label for="ATMID_show "><b>ATM ID</b></label><br>
+                <input type="text" name="ATMID_show " id="ATMID_show " value="Demo-121 (Selected ATM ID) " readonly>
+                <br /><br>
+
+                <label for="engineerName_show "><b>Engineer Name</b></label><br>
+                <input type="text" name="engineerName_show " id="engineerName_show " value="Mahim (Assigned Engineer Name) " readonly>
+                <br /><br>
+
+                <label for="callStartTime "><b>Call Start Time</b></label><br>
+                <input type="time" name="callStartTime " id="callStartTime " required>
+                <br /><br>
+
+                <label for="callEndTime "><b>Call End Time</b></label><br>
+                <input type="time" name="callEndTime " id="callEndTime " required>
+                <br /><br>
+
+                <label for="callType"><b>Call Status</b></label><br>
+                <select name="callType " id="callType ">
+                <option value="Under Serviec ">Under Service</option>
+                <option value="Fake Call ">Fake Call</option>
+                <option value="Done ">Complete</option>
+                <option value="Pending ">Pending</option>
+            </select>
+                <br /><br>
+
+                <label for="remark "><b>Remark</b></label><br>
+                <input type="text " placeholder="Remark " name="remark ">
+                <br /><br>
+
+                <label for="status_issuedby "><b>Engineer Issued By</b></label><br>
+                <input type="text " value="Mahim (Logged in user) " name="status_issuedby " readonly>
+                <br /><br>
+
+                <button type="submit ">Update</button>
+                <br><br>
+            </form>
+        </div>
+
+        <button type="button " class="button " onclick="location.reload(true); ">Re-Update Call</button> <br><br>
+        <button type="button " class="button " onClick=" window.history.back(); ">Done</button> <br><br>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Add</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootsrap-css.css">
+    <script src="JS/Clock.js" type="text/javascript"></script>
+
+    <div class="header">
+        <div id="logo">
+            <h1><img src="css/picture/logo.png" alt="logo">
+                <a href="http://www.zztlbd.com/" style="text-decoration: none; color: black;">
+                    <b>Zara Zaman Technology Ltd.</b>
+                </a>
+            </h1>
+
+        </div>
+        <div id="com_name        ">
+
+            <h2>Call Management System</h2>
+        </div>
+
+        <div class="clock"><span id='clock'></span>
+        </div>
+    </div>
+</head>
+
+<body class="body " onload=display_ct();>
+
+    <div class="form ">
+        <div id="submit ">
+
+            <form name="new_call " action="Call_Add.html " onsubmit="return document.getElementById( 'submit ').innerHTML='<h1>New Call Information is Successfully Added.</h1> <h3>Thank You.</h3><br/>' " method="POST ">
+                <label for="callID "><b>Call ID</b></label><br>
+                <input type="text" value="00001(Auto Generated) " name="callID " readonly>
+                <br /><br>
+
+                <label for="callDate "><b>Call Date</b></label><br>
+                <input type="date" name="callDate " required>
+                <br /><br>
+
+                <label for="time "><b>Call Time</b></label><br>
+                <input type="time" name="time " required>
+                <br /><br>
+
+                <label for="ATMID "><b>ATM ID</b></label><br>
+                <input type="text " value="IBBL-121(DataBase) " name="ATMID " readonly>
+                <br/><br>
+
+                <label for="BankName "><b>Bank Name</b></label><br>
+                <input type="text " value="IBBL(DataBase) " name="BankName " readonly>
+                <br /><br>
+
+                <label for="ATMLocation "><b>ATM Location</b></label><br>
+                <input type="text " value="Mirpur,Dhaka(DataBase) " name="ATMLocation " readonly>
+                <br /><br>
+
+                <label for="problem "><b>Problem</b></label><br>
+                <select name="problem" id="problem" required>
+                    <option value="not selected">Select</option>Select</o
+                    <option value="Monitor">Monitor</option>
+                    <option value="Card REader">Card Reader</option>
+                    <option value="Dispencer Problem">Dispencer Problem</option>
+                    <option value="Recieprinter">Recieprinter</option>
+                    <option value="Link Problem">Link Problem</option>
+                    <option value="Power Problem">Power Problem</option>
+                </select>
+                <br /><br>
+
+                <label for="callcontact "><b>Contact Person Number</b></label><br>
+                <input type="text " placeholder="Enter The Number " name="callcontact " required>
+                <br /><br>
+
+                <label for="remark "><b>Remark</b></label><br>
+                <input type="text " placeholder="Remark " name="remark ">
+                <br /><br>
+
+                <label for="issuedby "><b>Issued By</b></label><br>
+                <input type="text " value="Mahim (logged in user) " name="issuedby " readonly>
+                <br /><br>
+
+                <button type="submit ">Add Call</button><br><br>
+            </form>
+
+        </div>
+
+        <button type="button " class="button " onclick="location.reload(true); ">Re-Add New Call</button> <br><br>
+        <button type="button " class="button " onClick=" window.history.back(); ">Done</button> <br><br>
+
+    </div>
+</body>
+
+</html>

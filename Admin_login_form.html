@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Admin Login Form</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootsrap-css.css">
+    <script src="JS/Clock.js" type="text/javascript"></script>
+    <script src="JS/BackButton.js">
+    </script>
+
+    <div class="header">
+        <div id="logo">
+            <h1><img src="css/picture/logo.png" alt="logo">
+                <a href="http://www.zztlbd.com/" style="text-decoration: none; color: black;">
+                    <b>Zara Zaman Technology Ltd.</b>
+                </a>
+            </h1>
+        </div>
+        <div id="com_name ">
+
+            <h2>Call Management System</h2>
+        </div>
+
+        <div class="clock "><span id='clock'></span>
+        </div>
+    </div>
+</head>
+
+<body class="body " onload=display_ct();>
+    <div class="form ">
+
+        <h2>Please Login here to use this system as an Admin</h2><br>
+
+        <form name="admin " action="Admin_Home.html" method="POST ">
+            <label for="adminID "><b>Enter Admin ID</b></label><br>
+            <input type="text " placeholder="Enter Admin ID " name="adminID " required>
+            <br/><br>
+
+            <label for="Lpswd "><b>Password</b></label><br>
+            <input type="password " placeholder="Enter Your Password " name="passwd " required>
+            <br /><br>
+            <button type="submit ">Login</button>
+
+            <button onclick="back()" type="button " class="button">Cancel</button>
+        </form>
+    </div>
+</body>
+
+</html>
